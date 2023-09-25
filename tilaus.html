@@ -23,11 +23,11 @@
 
     <div>
         <form class="order">
-            nimi: <input type="text" name="name" id="name"> <br>
-           e-mail: <input type="text" name="email" id="email"><br>
-           puhelinnumero: <input type="text" name="phone" id="phone"><br>
-           <p>Kirjoita alhaalla olevaan laatikkoon mitä olet tilaamassa:</p><textarea name="tuotteet" id="tuotteet" cols="30" rows="10"></textarea>
-           <input type="button" onclick="alert('Tilaus Vastaanotettu!')" value="Lähetä">
+           <label for="name">nimi: </label> <input type="text" name="name" id="name" required> <br>
+           <label for="email">e-mail: </label> <input type="email" name="email" id="email" required><br>
+           <label for="phone">Puhelinnumero:</label> <input type="number" name="phone" id="phone" required><br><br>
+           <label for="tuotteet">Kirjoita alhaalla olevaan laatikkoon mitä olet tilaamassa <br></label><textarea name="tuotteet" id="tuotteet" cols="30" rows="10" required></textarea>
+           <input type="submit" onclick="alert('Tilaus Vastaanotettu!')" value="Lähetä">
         </form>
     </div>
 </body>
